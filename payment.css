@@ -1,0 +1,145 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgb(234, 227, 227), rgba(226, 223, 223, 0.551)), url("images/image.png");
+}
+
+.container-box {
+    background: white;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.top-bar {
+    background: #e8e3e358;
+}
+
+.payment-mathod {
+    background: rgba(218, 212, 212, 0.255);
+    width: 100%;
+}
+
+#cancelBtn {
+    cursor: pointer;
+}
+
+.mfs-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mfs-box img {
+    height: 64px;
+    width: 100px;
+    border: 1px solid skyblue;
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.bank img {
+    height: 64px;
+    width: 100px;
+    border: 1px solid skyblue;
+    padding: 8px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.payment-sub-mathod {
+    display: flex;
+    width: 100%;
+}
+
+.payment-sub-mathod > p {
+    width: 120px;
+    min-height: 50px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bkash1 > div {
+    cursor: pointer;
+}
+
+#bkash1 p span {
+    margin-left: 10px;
+    color: orangered;
+}
+
+.raw-check {
+    width: 396px;
+}
+
+.raw-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #c7c6c672;
+}
+
+.raw-details ul {
+    transition: 1s;
+}
+.raw-details li{
+    list-style: square;
+    text-align: start;
+    padding: 4px;
+    color: gray;
+}
+
+.raw-details li span {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px 5px;
+    color: rgba(137, 45, 9, 0.952);
+    background: #c7c6c672;
+}
+
+#copyNumber {
+    position: relative;
+}
+
+.copy-tooltip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: lightgreen;
+    padding: 3px;
+    font-size: 0.8rem;
+    display: none;
+    transition: all 1s;
+}
+
+#copyNumber:hover .copy-tooltip {
+    display: block;
+}
+
+.varify-btn {
+    width: 100%;
+    background: lightgreen;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: gray;
+}
